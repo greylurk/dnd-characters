@@ -4,10 +4,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
 \usepackage{dnd}
+\usepackage{dndcharacter}
+\usepackage{wasysym}
 
 \begin{document}
 
-\LARGE{Maruf ibn Mansur}
+{\LARGE{Maruf ibn Mansur}}
 
 Human Druid (\textit{Lawful Neutral})
 
@@ -20,6 +22,21 @@ Human Druid (\textit{Lawful Neutral})
     CHA=\stat{15},
 ]
 
+\begingroup
+  \small\centering\color{titlered}
+  \resizebox{!}{\height}{%
+    \begin{tabular}{ccl}
+      \Circle & +0 & Str\\
+      \CIRCLE & +0 & Str\\
+      O & +0 & Str\\
+      O & +0 & Str\\
+      O & +0 & Str\\
+      O & +0 & Str\\
+    \end{tabular}
+  }%
+  \\[0.4em]
+\endgroup
+
 \begin{tabular}{cccccc}
   HP & AC & Prof & Init & Spd & HitD \\
   30 & 14 & +2   & +2   & 25  & d8   \\
@@ -28,16 +45,13 @@ Human Druid (\textit{Lawful Neutral})
 
 {\Large{\textit{Health}}}\\
 \begin{tabular}{|m{3.1in}|}
-\hline
-Hit dice used (3d8):  O O\\[5pt]
+Hit dice used (3d8): O O O\\[5pt]
 Current HP: \rule{.4in}{.2pt} Temporary HP: \rule{.4in}{.2pt}\\[5pt]
 Death Saves: $ $ $ $ $ $ \ \ \  \\[5pt]
-Injuries: Bruised rib, ass-scar, \rule{.8in}{.2pt}\\
-\hline
 \end{tabular}
 \vspace{12pt}
 
-{\Large{\textit{Skills}}} \textit{(+1 to all unskilled checks after Modifier)}\\
+{\Large{\textit{Skills}} }\\
 \begin{tabular}{|llllll|}
 \hline
 Acrobatics &+4&Arcana& +4&Athletics& +1\\

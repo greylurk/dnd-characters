@@ -1,0 +1,19 @@
+% Saves Box
+\newkeycommand\saves[SPROF=,STR=0,
+    DPROF=,DEX=0,
+    CPROF=,CON=0,
+    IPROF=,INT=0,
+    WPROF=,WIS=0,
+    HPROF=,CHA=0]{%
+    \begingroup
+        \small\centering\color{titlered}
+        \resizebox{\linewidth}{\height}{%
+            \begin{tabular}{ccl}
+                \ifcommandkey{SPROF}{%
+                    \bullet}{%
+                    \circ} & \commandkey{STR} & Str \\
+            \end{tabular}
+        }%
+        \\[0.4em]
+    \endgroup
+}
