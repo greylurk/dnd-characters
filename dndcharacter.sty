@@ -1,19 +1,57 @@
+\usepackage{wasysym}
+
 % Saves Box
-\newkeycommand\saves[SPROF=,STR=0,
-    DPROF=,DEX=0,
-    CPROF=,CON=0,
-    IPROF=,INT=0,
-    WPROF=,WIS=0,
-    HPROF=,CHA=0]{%
+\newkeycommand\saves[SPROF=,STR=\stat{10},
+    DPROF=,DEX=\stat{10},
+    CPROF=,CON=\stat{10},
+    IPROF=,INT=\stat{10},
+    WPROF=,WIS=\stat{10},
+    HPROF=,CHA=\stat{10},
+    ACROBATICS=,
+    SLEIGHTOFHANDS=,
+    STEALTH=,
+    ATHLETICS=,
+    ARCANA=,
+    HISTORY=,
+    NATURE=,
+    RELIGION=,
+    INVESTIGATION=,
+    PERCEPTION=,
+    ANIMALHANDLING=,
+    INSIGHT=,
+    MEDICINE=,
+    SURVIVAL=,
+    DECEPTION=,
+    INTIMIDATION=,
+    PERFORMANCE=,
+    PERSUASION=]{%
     \begingroup
-        \small\centering\color{titlered}
-        \resizebox{\linewidth}{\height}{%
-            \begin{tabular}{ccl}
-                \ifcommandkey{SPROF}{%
-                    \bullet}{%
-                    \circ} & \commandkey{STR} & Str \\
-            \end{tabular}
-        }%
-        \\[0.4em]
+        \begin{tabular}{ccl}
+            \textbf{Stat} & & \textbf{Skill} \\
+            \commandkey{STR} & \ifcommandkey{SPROF}{\CIRCLE}{\Circle} & \textbf{\color{titlered}{Strength}} \\
+            & \ifcommandkey{ATHLETICS}{\CIRCLE}{\Circle} & Athletics \\
+            \commandkey{DEX} & \ifcommandkey{DPROF}{\CIRCLE}{\Circle} & \textbf{\color{titlered}{Dexterity}} \\
+            & \ifcommandkey{ACROBATICS}{\CIRCLE}{\Circle} & Acrobatics \\
+            & \ifcommandkey{SLEIGHTOFHANDS}{\CIRCLE}{\Circle} & Sleight of Hands \\
+            & \ifcommandkey{STEALTH}{\CIRCLE}{\Circle} & Stealth \\
+            \commandkey{CON} & \ifcommandkey{CPROF}{\CIRCLE}{\Circle} & \textbf{\color{titlered}Constitution} \\
+            \commandkey{INT} & \ifcommandkey{IPROF}{\CIRCLE}{\Circle} & \textbf{\color{titlered}Intelligence} \\
+            & \ifcommandkey{ARCANA}{\CIRCLE}{\Circle} & Arcana \\
+            & \ifcommandkey{HISTORY}{\CIRCLE}{\Circle} & History \\
+            & \ifcommandkey{INVESTIGATION}{\CIRCLE}{\Circle} & Investigation \\
+            & \ifcommandkey{NATURE}{\CIRCLE}{\Circle} & Nature \\
+            & \ifcommandkey{RELIGION}{\CIRCLE}{\Circle} & Religion \\
+            \commandkey{WIS} & \ifcommandkey{WPROF}{\CIRCLE}{\Circle} & \textbf{\color{titlered}Wisdom} \\
+            & \ifcommandkey{ANIMALHANDLING}{\CIRCLE}{\Circle} & Animal Handling \\
+            & \ifcommandkey{INSIGHT}{\CIRCLE}{\Circle} &History \\
+            & \ifcommandkey{MEDICINE}{\CIRCLE}{\Circle} & Medicine \\
+            & \ifcommandkey{PERCEPTION}{\CIRCLE}{\Circle} & Perception \\
+            & \ifcommandkey{SURVIVAL}{\CIRCLE}{\Circle} & Surivival \\
+            \commandkey{CHA} & \ifcommandkey{HPROF}{\CIRCLE}{\Circle} & \textbf{\color{titlered}Charisma} \\
+            & \ifcommandkey{DECEPTION}{\CIRCLE}{\Circle} & Deception \\
+            & \ifcommandkey{INTIMIDATION}{\CIRCLE}{\Circle} & Intimidation \\
+            & \ifcommandkey{PERFORMANCE}{\CIRCLE}{\Circle} & Performance \\
+            & \ifcommandkey{PERSUASION}{\CIRCLE}{\Circle} & Persuasion
+        \end{tabular}
     \endgroup
 }

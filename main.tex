@@ -5,15 +5,15 @@
 \usepackage{listings}
 \usepackage{dnd}
 \usepackage{dndcharacter}
-\usepackage{wasysym}
 
 \begin{document}
 
 {\LARGE{Maruf ibn Mansur}}
 
-Human Druid (\textit{Lawful Neutral})
+Human Druid 1 (\textit{Lawful Neutral})
 
-\stats[
+\subsection{Skills/Saves}
+\saves[
     STR=\stat{9},
     DEX=\stat{16},
     CON=\stat{10},
@@ -22,46 +22,22 @@ Human Druid (\textit{Lawful Neutral})
     CHA=\stat{15},
 ]
 
-\begingroup
-  \small\centering\color{titlered}
-  \resizebox{!}{\height}{%
-    \begin{tabular}{ccl}
-      \Circle & +0 & Str\\
-      \CIRCLE & +0 & Str\\
-      O & +0 & Str\\
-      O & +0 & Str\\
-      O & +0 & Str\\
-      O & +0 & Str\\
-    \end{tabular}
-  }%
-  \\[0.4em]
-\endgroup
-
+\subsection{Cobmat}
 \begin{tabular}{cccccc}
   HP & AC & Prof & Init & Spd & HitD \\
   30 & 14 & +2   & +2   & 25  & d8   \\
 \end{tabular}\\[2pt]
-\rule{1.95in}{0pt}Inspiration Point: {\Large O}
+Inspiration Point: \Circle
 
-{\Large{\textit{Health}}}\\
-\begin{tabular}{|m{3.1in}|}
-Hit dice used (3d8): O O O\\[5pt]
-Current HP: \rule{.4in}{.2pt} Temporary HP: \rule{.4in}{.2pt}\\[5pt]
-Death Saves: $ $ $ $ $ $ \ \ \  \\[5pt]
-\end{tabular}
-\vspace{12pt}
+\subsection{Health}
+\begingroup
+  \unskip\color{titlered}
+  \textbf{Hit Dice:} 3d8 \Circle \Circle \Circle \\
+	\textbf{Hit Points:} \parbox[c][1em][c]{1em}{ } / 10 \\
+	\textbf{Death Saves} \Circle \Circle \Circle \vspace{1em}|\vspace{1em} \Circle \Circle \Circle \\
+\endgroup
 
-{\Large{\textit{Skills}} }\\
-\begin{tabular}{|llllll|}
-\hline
-Acrobatics &+4&Arcana& +4&Athletics& +1\\
-Persuasion &+4&History& +3&Medicine& +3\\
-Performance &+6&Stealth& +4&&\\
-\hline
-\end{tabular}
-\vspace{12pt}
-
-{\Large{\textit{Proficiencies}}}\\
+\subsection{Proficiencies}
 \begin{tabular}{|m{3.1in}|}
 \hline
 Light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords, axes, hammers, masonry tools,
