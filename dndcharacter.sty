@@ -43,7 +43,7 @@
             & \ifcommandkey{RELIGION}{\CIRCLE}{\Circle} & Religion \\
             \commandkey{WIS} & \ifcommandkey{WPROF}{\CIRCLE}{\Circle} & \textbf{\color{titlered}Wisdom} \\
             & \ifcommandkey{ANIMALHANDLING}{\CIRCLE}{\Circle} & Animal Handling \\
-            & \ifcommandkey{INSIGHT}{\CIRCLE}{\Circle} &History \\
+            & \ifcommandkey{INSIGHT}{\CIRCLE}{\Circle} & Insight \\
             & \ifcommandkey{MEDICINE}{\CIRCLE}{\Circle} & Medicine \\
             & \ifcommandkey{PERCEPTION}{\CIRCLE}{\Circle} & Perception \\
             & \ifcommandkey{SURVIVAL}{\CIRCLE}{\Circle} & Surivival \\
@@ -55,3 +55,7 @@
         \end{tabular}
     \endgroup
 }
+
+\newenvironment{specialability}[1][\unskip]{
+    \smallskip\emph{\textbf{#1.}}
+}{}

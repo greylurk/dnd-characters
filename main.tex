@@ -8,84 +8,89 @@
 
 \begin{document}
 
-{\LARGE{Maruf ibn Mansur}}
+\section{Maruf ibn Mansur}
 
 Human Druid 1 (\textit{Lawful Neutral})
 
 \subsection{Skills/Saves}
 \saves[
     STR=\stat{9},
-    DEX=\stat{16},
-    CON=\stat{10},
+    DEX=\stat{15},
+    CON=\stat{16},
     INT=\stat{10},
     WIS=\stat{16},
-    CHA=\stat{15},
+    CHA=\stat{10},
+    NATURE=1,
+    SURVIVAL=1,
+    INSIGHT=1,
+    PERCEPTION=1,
 ]
 
 \subsection{Cobmat}
-\begin{tabular}{cccccc}
-  HP & AC & Prof & Init & Spd & HitD \\
-  30 & 14 & +2   & +2   & 25  & d8   \\
-\end{tabular}\\[2pt]
-Inspiration Point: \Circle
-
-\subsection{Health}
 \begingroup
   \unskip\color{titlered}
-  \textbf{Hit Dice:} 3d8 \Circle \Circle \Circle \\
+  \textbf{AC:} 14\\
+  \textbf{Proficiency:} +2\\
+  \textbf{Initiative:} +2 \\
+  \textbf{Speed:} 30 \\
+  \textbf{Hit Dice:} 1d8 \Circle \\
 	\textbf{Hit Points:} \parbox[l][1em][c]{1em}{0} / 10 \\
-	\textbf{Death Saves} \Circle \Circle \Circle \vspace{1em}|\vspace{1em} \Circle \Circle \Circle \\
+  \textbf{Death Saves} \Circle \Circle \Circle vs \Circle \Circle \Circle
 \endgroup
 
+\subsection{Weapons}
+\begingroup
+  \begin{monsteraction}[Scimitar]
+    \textit{Melee Weapon Attack:} +2 to hit, reach 5ft., Single Target. \textit{Hit:} \dice{1d6+2} slashing damage.
+  \end{monsteraction}
+
+  \begin{monsteraction}[Dagger]
+    \textit{Ranged or Melee Weapon Attack:} +2 to hit, reach 5ft., range 20/60 feet, Single Target. \textit{Hit:} \dice{1d4+2} piercing damage.
+  \end{monsteraction}
+\endgroup%
+
 \subsection{Proficiencies}
-Light armor, medium armor, shields, clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears, herbalism kit
+Light armor, medium armor, shields, clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears, herbalism kit, Quanun (Reskinned Dulcimer)
 
 \subsection{Equipment}
-Wooden Shield, Scimitar, leather armor, druidic focus, an explorer's pack
+Wooden Shield, Scimitar, leather armor, druidic focus, an explorer's pack, one set of travellers clothes, Quanun (Reskined Dulcimer), poorly made maps from Zakhara that depict the Sword Coast, my father's signet ring (10gp), coin pouch
 
 \subsection{Treasure}
 \begin{tabular}{ll}
 PP \rule{.5in}{.2pt} &Miscellaneous:\\
-GP \rule{.5in}{.2pt} &\rule{2.2in}{.2pt}\\
+GP 5 &\rule{2.2in}{.2pt}\\
 EP \rule{.5in}{.2pt} &\rule{2.2in}{.2pt}\\
 SP \rule{.5in}{.2pt} &\rule{2.2in}{.2pt}\\
 CP \rule{.5in}{.2pt} &\rule{2.2in}{.2pt}\\
 \end{tabular}
 
-\subsection{Weapons}
-\textbf{Scimitar} \\
-1d6 +1 slashing. Light, thrown (20/60)
-
-\textbf{Dagger} \\
-1d4 +2 piercing. Finesse, light, thrown (20/60)
-
 \subsection{Spells}
-\hspace{5em}O$^1$ O$^1$ O$^1$ O$^1$ O$^2$ O$^2$\\
 \subsubsection{Cantrips}
-\textbf{Poison Spray}
-\textbf{Prestidigitation}: Sensory effect, light/snuff flame, clean/soil/warm/chill/flavor 1ft$^3$, symbol/mark for 1 hour, handsized trinket/illusion.  {\sc action, \sc 10 ft., lasts 1 hour}\\
-\textbf{Mending}: Repair up to 1 ft. tear or break in object. {\sc 1 minute, touch, instantaneous.}\\
-\subsubsection{Level 1}
-\textbf{Cure Wounds}\\
-1d8 (per spell slot) + CHA modifier to HP; {\sc touch, instantaneous}\\
-\textbf{Dissonant Whispers}\\
-3d6 psychic damage on failed WIS save, 1/2 damage otherwise. Target uses reaction to flee caster on failed WIS save.  {\sc 60 ft, instantaneous}.\\
-\textbf{Sleep}\\
-Start with lowest HP target and subtract each target's HP from 3d8 (+2d8 per spell slot), only affects if HP $\leq$ sum and within 20ft. of spell target. Puts affected to sleep. {\sc 90 ft, 1min}\\
-\textbf{Thunderwave}\\
-1d8 (+1d8 per spell slot) thunder damage +10ft push on failed CON save, 1/2 damage otherwise. {\sc 15ft cube, self, instantaneous}\\
-\textbf{Shatter$^2$}\\
-3d8 (+1d8 per slot$>$2) thunder damage on failed CON save, 1/2 damage otherwise. {\sc 60 ft range, 10ft radius, instantaneous}\\
-\rule{1.1in}{0pt}Bonus Action\\
-\textbf{Healing Word}\\
-1d4 per spell slot + CHA modifier to HP for target in sight. {\sc 60ft, instantaneous}\\
+\textit{Poison Spray}, \textit{Druidcraft}
+\subsubsection{Level 1 --- \Circle \Circle}
+\textit{Animal Friendship} \Circle, \textit{Charm Person} \Circle, \textit{Create or Destroy Water} \CIRCLE, \textit{Cure Wounds} \CIRCLE, \textit{Detect Magic} \Circle, \textit{Entangle} \CIRCLE, \textit{Faerie Fire} \Circle, \textit{Fog Cloud} \Circle, \textit{Goodberry} \Circle, \textit{Healing Word} \Circle, \textit{Jump} \Circle, \textit{Longstrider} \Circle, \textit{Purify Food and Water} \Circle, \textit{Speak with Animals} \Circle, \textit{Thunderwave} \CIRCLE
 
 \subsection{Special}
-\textbf{Bardic Inspiration\ / \ Cutting Words O O}\\
-\textbullet 1d6 to ally for {\sc ability check}, {\sc saving throw}, or {\sc attack roll}; 10min duration.\\
-\textbullet 1d6 subtracted from enemy {\sc ability check}, {\sc attack roll}, or {\sc damage roll}. {\sc 60 ft.}\\
-\rule{1.22in}{0pt}Short Rest\\
-\textbf{Song of Rest}\\
-1d6 HP to ally who already regained HP.\\
+\begin{specialability}[Druidic]
+  You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can ’t decipher it without magic.
+\end{specialability}
+
+\begin{specialability}[All Eyes on You]
+  My accent, mannerisms, figures of speech, and even my appearance all mark me as foreign. Curious glances are directed my way wherever I go, which can be a nuisance, but I also gain the friendly interest of scholars and others intrigued by far off lands, to say nothing of every day folk who are eager to hear stories of my homeland.
+
+  I can parley this attention into access to people and places I might not otherwise have, for me and my travelling companions. Noble lords, scholars, and merchant princes, to name a few, might be interested in hearing about my distant homeland and people.
+\end{specialability}
+
+\subsection{Personality}
+
+\textbf{Background: Far Traveller} I am from the far off land of Zakhara. My family have ranged far and wide as traders and travellers. I once sought a life of ascietism, separate from the wealth that my father pursued, but his deathbed confession has driven me to try to right wrongs he committed far from home.
+
+\textbf{Personality Trait:} I have my own ideas about what is and is not food and I find the eating habits of those around me fascinating, confusing, and sometimes revolting.
+
+\textbf{Ideals: Suspicious} Everything is new, but I have a thirst to learn.
+
+\textbf{Bonds:} On his deathbed, my father confessed that he had become involved with a group called the Cult of the Dragon. They paid him to smuggle goods across the Sword Coast. Wracked by guilt, he begged me to investigate the cult and undo the evil he may have helped foster. He urged me to begin my search in a town called Greenest.
+
+\textbf{Flaws:} I have a weakness for the exotic beauty of the people of these lands.
 
 \end{document}
