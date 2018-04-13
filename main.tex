@@ -5,6 +5,7 @@
 \usepackage{listings}
 \usepackage{dnd}
 \usepackage{dndcharacter}
+\usepackage{tabularx}
 
 \begin{document}
 
@@ -29,16 +30,13 @@ Human Druid 1 (\textit{Lawful Neutral})
 ]
 
 \subsection{Combat}
-\begingroup
-  \unskip\color{titlered}
-  \textbf{AC:} 15\\
-  \textbf{Proficiency:} +2\\
-  \textbf{Initiative:} +2 \\
-  \textbf{Speed:} 30 \\
-  \textbf{Hit Dice:} 1d8 \Circle \\
-	\textbf{Hit Points:} \parbox[l][1em][c]{1em}{10} / 10 \\
-  \textbf{Death Saves} \Circle \Circle \Circle vs \Circle \Circle \Circle
-\endgroup
+\begin{tabularx}{\columnwidth}{rlrl}
+  \textbf{AC:}          & 15          & \textbf{Proficiency:} & +2\\
+  \textbf{Initiative:}  & +2          & \textbf{Speed:}       & 30 \\
+  \textbf{Hit Dice:}    & 1d8 \Circle & \textbf{Hit Points:}  & \parbox[l][1em][c]{1em}{11} / 11 \\
+  \textbf{Death Saves}  & \Circle \Circle \Circle \\
+                        & \Circle \Circle \Circle
+\end{tabularx}
 
 \subsection{Weapons}
 \begingroup
@@ -70,7 +68,16 @@ CP \rule{.5in}{.2pt} &\rule{2.2in}{.2pt}\\
 \subsubsection{Cantrips}
 \textit{Poison Spray}, \textit{Druidcraft}
 \subsubsection{Level 1 --- \Circle \Circle}
-\textit{Animal Friendship} \Circle, \textit{Charm Person} \Circle, \textit{Create or Destroy Water} \CIRCLE, \textit{Cure Wounds} \CIRCLE, \textit{Detect Magic} \Circle, \textit{Entangle} \CIRCLE, \textit{Faerie Fire} \Circle, \textit{Fog Cloud} \Circle, \textit{Goodberry} \Circle, \textit{Healing Word} \Circle, \textit{Jump} \Circle, \textit{Longstrider} \Circle, \textit{Purify Food and Water} \Circle, \textit{Speak with Animals} \Circle, \textit{Thunderwave} \CIRCLE
+\begin{tabularx}{\columnwidth}{cXcX}
+  \Circle & \textit{Animal Friendship}       & \Circle & \textit{Charm Person} \\
+  \CIRCLE & \textit{Create or Destroy Water} & \CIRCLE & \textit{Cure Wounds} \\
+  \Circle & \textit{Detect Magic}            & \CIRCLE & \textit{Entangle} \\
+  \Circle & \textit{Faerie Fire}             & \Circle & \textit{Fog Cloud} \\
+  \Circle & \textit{Goodberry}               & \Circle & \textit{Healing Word} \\
+  \Circle & \textit{Jump}                    & \Circle & \textit{Longstrider} \\
+  \Circle & \textit{Purify Food and Water}   & \Circle & \textit{Speak with Animals} \\
+  \CIRCLE & \textit{Thunderwave}
+\end{tabularx}
 
 \subsection{Special}
 \begin{specialability}[Druidic]
