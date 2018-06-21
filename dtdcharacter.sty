@@ -1,0 +1,17 @@
+\newcount\my@repeat@count
+\newcommand{\circledots}[1]{%
+  \begingroup
+  \my@repeat@count=\z@%
+  \@whilenum\my@repeat@count<#1\do{\circ\advance\my@repeat@count\@ne}%
+  \endgroup
+}
+\makeatother
+
+\newcommand{\characteristicdots}[3]{%
+    \begingroup
+    \FPeval{\ct}{clip(1+#1+#3)}%
+    \FPeval{\xp}{clip(#2/100)}%
+%    \FPifgt{\xp}{\ct}\FPeval{\xp}{clip(trunc(\xp-\ct)}\advance\ct\@ne\fi%
+    \xp
+    \endgroup
+}
